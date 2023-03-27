@@ -1,6 +1,5 @@
 import Footer from '@/ui/footer'
 import Header from '@/ui/header'
-import Intro from '@/ui/intro/index'
 import LeftMenu from '@/ui/left-menu'
 import RightMenu from '@/ui/right-menu'
 import '../styles/globals.scss'
