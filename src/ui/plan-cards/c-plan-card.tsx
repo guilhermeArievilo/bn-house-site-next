@@ -6,7 +6,7 @@ import './styles.scss'
 
 interface IPlanCard {
   name: string,
-  stars: Number,
+  stars: number,
   content: string,
   price: string
 }
@@ -17,7 +17,7 @@ export default function PlanCard ({ name, stars, content, price }: IPlanCard) {
     <div className="header relative flex flex-col justify-start">
       <div className="adwards flex mb-6 z-20">
         {
-          [1, 2, 3].map((item) => (
+          [1, 2, 3].map((item: number) => (
             <Award key={`Award-${item}`} className={item > stars ? 'stroke-dark-100' : 'stroke-light-100'}/>
           ))
         }
