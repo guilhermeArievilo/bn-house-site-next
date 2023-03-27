@@ -26,7 +26,7 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-5">
             <div className="flex lg:justify-end justify-center">
-              <h1 className="h0 metal-gradient pt-20 text-center lg:text-left xl:pl-24">
+              <h1 className="h0 metal-gradient lg:pt-20 text-center lg:text-left xl:pl-24">
                 Quer ter resultados nos treinos ?
               </h1>
             </div>
@@ -35,7 +35,7 @@ export default function Home() {
             <Photos className="w-100 lg:w-[120%] lg:-translate-x-32" />
           </div>
         </div>
-        <div className="flex flex-col items-center -translate-y-24">
+        <div className="flex flex-col items-center lg:-translate-y-24">
           <h1>Entre para <strong className='text-primary'>BN HOUSE</strong></h1>
           <a href="" className="fill-button flex items-center mt-20">
             <Check className="mr-2"/>

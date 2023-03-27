@@ -35,6 +35,11 @@ body {
   overflow-x: hidden !important;
 }
 
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .app-container {
   position: relative;
   &::after {
