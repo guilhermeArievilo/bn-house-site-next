@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Big Noodle Titling';
+  src: url('../assets/fonts/bignoodletitling/big_noodle_titling.ttf');
+  src: url('../assets/fonts/bignoodletitling/big_noodle_titling_oblique.ttf');
+  font-style: normal;
+}
+
+@mixin typeface-1($size, $device: desktop) {
+  
+  @if $size == h0 and $device == desktop {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: 300;
+    font-size: 96px;
+    line-height: 106px;
+    // letter-spacing: 0.08em;
+  } @else if $size == h0 and $device == mobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: 300;
+    font-size: 64px;
+    line-height: 71px;
+    // letter-spacing: 0.08em;
+  } @else if $size == h0 and $device == smallmobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    // letter-spacing: 0.08em;
+  }
+
+  @if $size == h1 and $device == desktop {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: bold;
+    font-size: 64px;
+    line-height: 71px;
+    // letter-spacing: 0.08em;
+  } @else if $size == h1 and $device == mobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    // letter-spacing: 0.08em;
+  } @else if $size == h1 and $device == smallmobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    // letter-spacing: 0.08em;
+  }
+  
+  @else if $size == h2 and $device == desktop {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    // letter-spacing: 0.08em;
+  } @else if $size == h2 and $device == mobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    // letter-spacing: 0.08em;
+  } @else if $size == h2 and $device == smallmobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    // font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    // letter-spacing: 0.08em;
+  } 
+  
+  @else if $size == h3 and $device == desktop {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    font-size: 40px;
+    line-height: 44px;
+    // font-weight: 300;
+  } @else if $size == h3 and $device == mobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    font-size: 36px;
+    line-height: 40px;
+    // font-weight: 300;
+  } @else if $size == h3 and $device == smallmobile {
+    font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+    font-size: 32px;
+    line-height: 35px;
+    // font-weight: 300;
+  }
+}
+
+@mixin typeface-2($size: p2, $device: desktop) {
+  font-family: 'Big Noodle Titling', 'Sofia Sans Extra Condensed';
+
+  @if $size == p1 and $device == desktop {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+  } @else if $size == p1 and $device == mobile {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+  } @else if $size == p1 and $device == smallmobile {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+  } 
+  
+  @else if $size == p2 and $device == desktop {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 300;
+  } @else if $size == p2 and $device == smallmobile {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 400;
+  } 
+  
+  @else if $size == p3 and $device == desktop {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+  } @else if $size == p3 and $device == mobile {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 400;
+  } @else if $size == p3 and $device == smallmobile {
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 400;
+  }
+
+  @else if $size == p4 and $device == desktop {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 500;
+  } @else if $size == p4 and $device == mobile {
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 500;
+  }
+}
+
+.h0 {
+  @include typeface-1(h0, mobile);
+
+  @screen lg {
+    @include typeface-1(h0, desktop);
+  }
+}
+
+h1 {
+  @include typeface-1(h1, mobile);
+
+  @screen lg {
+    @include typeface-1(h1, desktop);
+  }
+}
+
+h2 {
+  @include typeface-1(h2, mobile);
+
+  @screen lg {
+    @include typeface-1(h2, desktop);
+  }
+}
+
+h3 {
+  @include typeface-1(h3, mobile);
+
+  @screen lg {
+    @include typeface-1(h3, desktop);
+  }
+}
+
+.metal-gradient {
+  background: radial-gradient(103.14% 875.82% at 8.28% 18.7%, #FFFFFF 0%, #171717 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

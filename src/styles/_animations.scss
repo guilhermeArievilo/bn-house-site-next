@@ -1,0 +1,56 @@
+.bn-animation {
+  .bn-outline_svg__n {
+    animation: none;
+
+    @screen lg {
+      animation: dash 5s ease alternate infinite;
+    }
+  }
+  .bn-outline_svg__b {
+    animation: none;
+
+    @screen lg {
+      animation: dash 5s ease 1s alternate infinite;
+    }
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1000 300;
+    stroke-dashoffset: 20;
+  }
+  100%{
+    stroke-dasharray: 1000 50;
+    stroke-dashoffset: 1000;
+  }
+}
+
+.dash-animation {
+  animation: none;
+
+  @screen lg {
+    animation: dash 5s ease alternate infinite;
+  }
+}
+
+.x-group {
+  .x-group_svg__start {
+    animation: toggle 1s ease alternate infinite;
+  }
+  .x-group_svg__center {
+    animation: toggle 1s ease .4s alternate infinite;
+  }
+  .x-group_svg__end {
+    animation: toggle 1s ease .8s alternate infinite;
+  }
+}
+
+@keyframes toggle {
+  0%,25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

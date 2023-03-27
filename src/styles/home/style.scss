@@ -1,0 +1,20 @@
+.spot-light {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1000px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.24);
+    top: 200px;
+    right: -1258px;
+    border-radius: 1000px;
+    filter: blur(400px);
+    z-index: -1;
+  }
+}
+
+.gym-section {
+  transform: scale(2) translateY(-50px);
+}

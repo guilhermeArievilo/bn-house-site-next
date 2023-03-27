@@ -1,0 +1,15 @@
+.card-plan {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -2px;
+    background: linear-gradient(31.2deg, #A40711 0%, rgba(164, 7, 17, 0) 44.56%);;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    opacity: 40%;
+  }
+}

@@ -1,0 +1,16 @@
+<svg width="164" height="39" viewBox="0 0 164 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="x-group">
+<g id="start" class="start">
+<path id="Vector" d="M38.4402 1L1 38.4402" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M1 1L38.4402 38.4402" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="center" class="center">
+<path id="Vector_3" d="M100.839 1L63.3984 38.4402" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M63.3984 1L100.839 38.4402" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="end" class="end">
+<path id="Vector_5" d="M163.243 1.00012L125.803 38.4404" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M125.803 1.00012L163.243 38.4404" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
